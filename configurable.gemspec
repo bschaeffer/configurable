@@ -1,6 +1,10 @@
+# -*- encoding: utf-8 -*-
+$:.push File.expand_path("../lib", __FILE__)
+require "configurable"
+
 Gem::Specification.new do |s|
   s.name        = "configurable"
-  s.version     = '0.0.1'
+  s.version     = Configurable::VERSION
   s.authors     = ["Braden Schaeffer"]
   s.email       = ["braden.schaeffer@gmail.com"]
   s.homepage    = ""
