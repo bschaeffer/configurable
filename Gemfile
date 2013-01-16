@@ -1,3 +1,4 @@
-source :rubygems
+source "http://rubygems.org"
 
-gem 'confstruct'
+# Specify your gem's dependencies in confstruct.gemspec
+gemspec
