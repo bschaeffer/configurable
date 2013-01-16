@@ -4,7 +4,7 @@ require "configurable/version"
 
 Gem::Specification.new do |s|
   s.name        = "configurable"
-  s.version     = Configurable::VERSION
+  s.version     = Configurable::VERSION::STRING
   s.authors     = ["Braden Schaeffer"]
   s.email       = ["braden.schaeffer@gmail.com"]
   s.homepage    = ""
@@ -15,6 +15,9 @@ Gem::Specification.new do |s|
   s.test_files    = `git ls-files -- spec/*`.split("\n")
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
+
+  s.add_dependency 'active_support'
+  s.add_dependency 'confstruct'
 
   s.add_development_dependency "rake", ">=0.8.7"
   s.add_development_dependency 'simplecov'
