@@ -6,7 +6,6 @@ module Configurable
       if !@default_values.has_key?(key)
         raise ConfigurationError, "Invalid configuration key: #{key}"
       elsif block_given?
-        puts "blockkkkkk"
         super(key, &block)
       else
         super
